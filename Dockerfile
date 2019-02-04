@@ -49,8 +49,8 @@ RUN apt-get update; apt-get install -y build-essential ca-certificates libbz2-de
     libxcomposite1 libtiff5 libqt5widgets5 libqt5webkit5 libssl-dev python3 mesa-common-dev libxml2-dev \
     libcurses-ocaml-dev libgl1-mesa-dri libgl1-mesa-glx mesa-utils fcitx-frontend-qt5 libqt5gui5 gdebi \
     fcitx-modules fcitx-module-dbus libedit2 libqt5core5a libqt5dbus5 libqt5network5 libqt5printsupport5 \
-    default-jre default-jre-headless expect libcurl4 libcurl4-openssl-dev curl libssh2-1-dev libgit2-dev \
-    libopenblas-base libgsl-dev liblapacke liblapacke-dev python-dev python3-dev libncurses-dev patch libnetcdf-dev \
+    default-jre default-jre-headless expect libcurl4 libcurl4-openssl-dev curl libssh2-1-dev \
+    libopenblas-base libgsl-dev liblapacke liblapacke-dev libncurses-dev patch libnetcdf-dev \
     openssl libssl-dev libmysqlclient-dev libpng-dev manpages vim libopenblas-dev netcdf-bin libapparmor-dev \
     && update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java \
     && echo "en_GB.UTF-8 UTF-8" >> /etc/locale.gen \
