@@ -87,3 +87,16 @@ RUN Rscript /usr/local/script.R \
     && chmod 777 -R /usr/local/lib/R/ \
     && chmod 777 -R /usr/lib/R/ \
     && chmod 777 -R /usr/share/R/
+    
+## Create user training
+########
+RUN useradd -r -s /bin/bash -U -m -d /home/training -p '' training
+
+# Setup the user envirenment
+########
+ENV HOME /home/training
+RUN usermod -aG sudo,audio,video training \
+    && echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+
+WORKDIR $HOME
+USER training
