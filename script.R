@@ -1,4 +1,6 @@
 if (!requireNamespace("BiocManager"))
     install.packages("BiocManager")
-BiocManager::install(ask=FALSE)
-BiocManager::install(c("devtools","xcms","CAMERA"), ask=FALSE)
+BiocManager::install(update=TRUE, ask=FALSE)
+BiocManager::install("devtools", ask=FALSE)
+BiocManager::install("xcms", version = "3.8", ask=FALSE)
+BiocManager::install("CAMERA", version = "3.8", ask=FALSE)
